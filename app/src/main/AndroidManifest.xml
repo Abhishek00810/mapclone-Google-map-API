@@ -18,27 +18,23 @@
         android:theme="@style/Theme.Map_TODO">
 
         <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+             The Google Maps API key is read from MAPS_API_KEY in local.properties
+             (see app/build.gradle), so it is never committed to the repository.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC0T7-RRgxJOYT_lUGvlDjE39w8DsmNKLY" />
+            android:value="${mapsApiKey}" />
 
         <activity
-            android:name=".CreateMapActivity"
+            android:name=".ui.create.CreateMapActivity"
             android:exported="false"
             android:label="@string/title_activity_create_map" />
         <activity
-            android:name=".googlemap"
+            android:name=".ui.display.DisplayMapActivity"
             android:exported="false"
-            android:label="@string/title_activity_googlemap" />
+            android:label="@string/title_activity_display_map" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.list.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

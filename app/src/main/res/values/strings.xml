@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">Map_TODO</string>
-    <string name="title_activity_googlemap">googlemap</string>
-    <string name="title_activity_create_map">CreateMapActivity</string>
+    <string name="title_activity_display_map">Map</string>
+    <string name="title_activity_create_map">Create Map</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="dialog_create_map_title">Map Title</string>
+    <string name="dialog_create_marker_title">Create a Marker</string>
+    <string name="hint_map_title">Title</string>
+    <string name="hint_place_title">Enter Title</string>
+    <string name="hint_place_description">Description</string>
+    <string name="hint_long_press_to_add_marker">Long press to add a marker</string>
+
+    <string name="error_empty_map_title">Title should not be empty</string>
+    <string name="error_empty_place_fields">Title and description should not be empty</string>
+    <string name="error_no_markers">Add at least one marker before saving</string>
 </resources>
